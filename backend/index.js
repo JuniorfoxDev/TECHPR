@@ -212,7 +212,7 @@ app.get('/all-project/chart-data', authenticateToken, async(req, res) => {
     }
 })
 
-app.listen(8000, () => {
+app.listen('https://techpr.vercel.app', () => {
     console.log("Server is running on port 8000");
 });
 
