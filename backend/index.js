@@ -12,7 +12,7 @@ const { authenticateToken } = require("./utilities");
 
 app.use(express.json());
 app.use(cors({
-    origin: "*"
+    origin: "https://techpr.vercel.app/"
 }));
 
 app.get("/", (req, res) => {
@@ -212,7 +212,7 @@ app.get('/all-project/chart-data', authenticateToken, async(req, res) => {
     }
 })
 
-app.listen('techpr.vercel.app', () => {
+app.listen('8000', () => {
     console.log("Server is running on port 8000");
 });
 
