@@ -12,7 +12,7 @@ const { authenticateToken } = require("./utilities");
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://techpr.vercel.app/"
+    origin: "https://techpr.vercel.app"
 }));
 
 app.get("/", (req, res) => {
